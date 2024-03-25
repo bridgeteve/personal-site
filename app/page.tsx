@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { TracingBeam } from "../components/ui/tracing-beam";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import { MacbookScroll } from "@/components/ui/macbook-scroll";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -28,6 +29,7 @@ export default function Home() {
         </button>
       </motion.div>
       </AuroraBackground>
+      <MacbookScroll></MacbookScroll>
       </TracingBeam>
     </main>
   );
