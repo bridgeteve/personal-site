@@ -6,10 +6,13 @@ import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { SignupFormDemo } from "@/components/ui/SignUpForm";
 import { CardHoverEffectDemo } from "@/components/ui/feature-cards";
+import { BackgroundGradientDemo } from "@/components/ui/carddemo";
+import { AnimatedPinDemo } from "@/components/ui/PinDemo";
+import { EvervaultCardDemo } from "@/components/ui/EverVaultDemo";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
-      <TracingBeam className="px-6">
+    <main className="flex min-h-screen min-w-screen flex-col items-center justify-between ">
+      <TracingBeam >
       <AuroraBackground >
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
@@ -40,18 +43,29 @@ export default function Home() {
       />
        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-          Spotlight <br /> is the new trend.
+          Join <br /> the waitlist.
         </h1>
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
           Spotlight effect is a great way to draw attention to a specific part
           of the page. Here, we are drawing the attention towards the text
-          section of the page. I don&apos;t know why but I&apos;m running out of
-          copy.
+          section of the page. 
         </p>
       </div>
       </div>
   <SignupFormDemo></SignupFormDemo>
   <CardHoverEffectDemo></CardHoverEffectDemo>
+  <div style={{display: "flex", marginRight:"5rem", marginLeft: "5rem", justifyContent: "space-around"}} >
+  <BackgroundGradientDemo ></BackgroundGradientDemo>
+  <div style={{width: "2rem"}}></div>
+  <EvervaultCardDemo></EvervaultCardDemo>
+  <div style={{width: "2rem"}}></div>
+  <BackgroundGradientDemo></BackgroundGradientDemo>
+  </div>
+  <div style={{display: "flex", marginRight:"5rem", marginLeft: "5rem", justifyContent: "space-around"}} >
+  <AnimatedPinDemo></AnimatedPinDemo>
+  <AnimatedPinDemo></AnimatedPinDemo>
+  <AnimatedPinDemo></AnimatedPinDemo>
+  </div>
       </TracingBeam>
     </main>
   );
