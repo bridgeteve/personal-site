@@ -9,6 +9,7 @@ import { CardHoverEffectDemo } from "@/components/ui/feature-cards";
 import { BackgroundGradientDemo } from "@/components/ui/carddemo";
 import { AnimatedPinDemo } from "@/components/ui/PinDemo";
 import { EvervaultCardDemo } from "@/components/ui/EverVaultDemo";
+import { LampDemo } from "@/components/ui/lamp";
 export default function Home() {
   return (
     <main className="flex min-h-screen min-w-screen flex-col items-center justify-between ">
@@ -66,6 +67,7 @@ export default function Home() {
   <AnimatedPinDemo></AnimatedPinDemo>
   <AnimatedPinDemo></AnimatedPinDemo>
   </div>
+  <LampDemo></LampDemo>
       </TracingBeam>
     </main>
   );
