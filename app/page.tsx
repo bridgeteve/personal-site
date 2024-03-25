@@ -5,9 +5,10 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { SignupFormDemo } from "@/components/ui/SignUpForm";
+import { CardHoverEffectDemo } from "@/components/ui/feature-cards";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between ">
       <TracingBeam className="px-6">
       <AuroraBackground >
       <motion.div
@@ -50,6 +51,7 @@ export default function Home() {
       </div>
       </div>
   <SignupFormDemo></SignupFormDemo>
+  <CardHoverEffectDemo></CardHoverEffectDemo>
       </TracingBeam>
     </main>
   );

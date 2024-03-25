@@ -68,7 +68,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh]  flex flex-col items-center py-0 md:py-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="min-h-[200vh]  flex flex-col items-center py-0 md:py-80 justify-middle flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
     >
       <motion.h2
         style={{
@@ -113,7 +113,7 @@ export const MacbookScroll = ({
         {showGradient && (
           <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
         )}
-        {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
+        {badge && <div className="absolute  left-4">{badge}</div>}
       </div>
     </div>
   );
@@ -133,7 +133,7 @@ export const Lid = ({
   src?: string;
 }) => {
   return (
-    <div className="relative [perspective:800px]">
+    <div className="relative [perspective:700px]">
       <div
         style={{
           transform: "perspective(800px) rotateX(-25deg) translateZ(0px)",
@@ -149,7 +149,6 @@ export const Lid = ({
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
           <span className="text-white">
-            <AceternityLogo />
           </span>
         </div>
       </div>
@@ -645,23 +644,3 @@ export const OptionKey = ({ className }: { className: string }) => {
   );
 };
 
-const AceternityLogo = () => {
-  return (
-    <svg
-      width="66"
-      height="65"
-      viewBox="0 0 66 65"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-3 w-3 text-white"
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-};
