@@ -10,7 +10,9 @@ import { BackgroundGradientDemo } from "@/components/ui/carddemo";
 import { AnimatedPinDemo } from "@/components/ui/PinDemo";
 import { EvervaultCardDemo } from "@/components/ui/EverVaultDemo";
 import { LampDemo } from "@/components/ui/lamp";
+import pic from "@/assets/images/policypscreen.png"
 import Footer from "@/components/ui/Footer";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen min-w-screen flex-col items-center justify-between ">
@@ -37,7 +39,7 @@ export default function Home() {
         </button>
       </motion.div>
       </AuroraBackground>
-      <MacbookScroll></MacbookScroll>
+      <MacbookScroll src={pic}></MacbookScroll>
       <div className="h-[50rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight 
       className="-top-40 left-0 md:left-60 md:-top-20 "
